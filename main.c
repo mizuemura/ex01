@@ -25,6 +25,10 @@ int main(int argc, char *argv[]) {
     break;
   case '/':
     // FIXME: handle division by zero here!
+    if (rhs == 0){
+      printf("Error: Can not divide by zero.")
+      return EXIT_SUCCESS;
+    }
     result = lhs / rhs;
     break;
     
